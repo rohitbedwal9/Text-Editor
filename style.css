@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    border: 2px solid black;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: black;
+    color: white;
+}
+
+.functions .btn {
+    border: 2px solid #000;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .hamburger {
+        padding: 1rem 2%;
+        align-items: center;
+        position: relative;
+        display: inline-block;
+
+    }
+
+    .logo {
+        font-size: large;
+        align-self: center;
+
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+        width: 25px;
+        cursor: pointer;
+
+    }
+
+    .menu a {
+        font-size: 1rem;
+        padding: 0.5rem;
+        display: block;
+        text-align: center;
+        transition: all 0.3 ease-in-out;
+    }
+
+    .menu.open {
+        max-height: 300px;
+        width: 100px;
+    }
+
+
+    .menu-icon span {
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        transition: all 0.3 ease-in-out;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3 ease-in-out;
+    }
+
+    .menu.open {
+        max-height: 300px;
+    }
+
+    .menu-icon.open span:first-child {
+        transform: rotate(45deg) translate(10px, 5px);
+    }
+
+    .menu-icon.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.open span:last-child {
+        transform: rotate(-45deg) translate(10px, -5px);
+    }
+
+    .menu-icon span:first-child {
+        transform: none;
+    }
+
+    .menu-icon span:first-child {
+        opacity: 1;
+    }
+
+    .menu-icon span:first-child {
+        transform: none;
+    }
+
+    .section {
+        width: 100%;
+
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .text {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+        width: 80%;
+    }
+}
