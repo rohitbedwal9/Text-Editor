@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Editor</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script> 
-    
+    <script src="script.js"></script> 
 </head>
 <body>
-    <div class="main flex flex-col justify-between items-center min-h-screen font-[Poppins]">
-        <div class="navbar w-full bg-blue-400 text-xl font-semibold flex justify-between items-center px-[6rem] py-[1rem]">  
+    <div class="main">
+        <div class="navbar">  
             <div class="logo">
                Text Editor
             </div>
-            <div class="nav-items flex w-[30%] justify-around items-center">
-                <a class="nav-item border-b-2 border-transparent hover:border-b-black hover:opacity-60" aria-current="page" href="#">Home</a>
-                <a class="nav-item border-b-2 border-transparent hover:border-b-black hover:opacity-60" href="#">About</a>
-                <a class="nav-item border-b-2 border-transparent hover:border-b-black hover:opacity-60" href="https://github.com/rohitbedwal9/Text-Editor">Get Code</a>
+            <div class="nav-items">
+                <a class="nav-item" aria-current="page" href="#">Home</a>
+                <a class="nav-item " href="#">About</a>
+                <a class="nav-item" href="https://github.com/rohitbedwal9/Text-Editor">Get Code</a>
             </div>
-            <div class="hamburger " >
+            <div class="hamburger" >
                 <div class="menu-icon" onclick="openMenu()">
                     <span></span>
                     <span></span>
@@ -33,25 +31,25 @@
                 </div>
             </div>
         </div>
-        <div class="section w-full flex flex-col gap-[1rem] items-center">
-            <div class="functions flex gap-[1rem] items-center">
-                <div class="btn bold-btn font-bold" title="Bold" onclick="bold()">B</div>
-                <div class="btn italic-btn italic " title="Italic" onclick="italic()">I</div>
-                <div class="btn underline-btn underline" title="Underline" onclick="underline()">U</div>
+        <div class="section">
+            <div class="functions">
+                <div class="btn bold-btn" title="Bold" onclick="bold()">B</div>
+                <div class="btn italic-btn" title="Italic" onclick="italic()">I</div>
+                <div class="btn underline-btn " title="Underline" onclick="underline()">U</div>
                 <div class="btn uppercase-btn" title="Uppercase" onclick="upperCase()">A</div>
                 <div class="btn lowercase-btn" title="Lowercase" onclick="lowerCase()">a</div>
                 <div class="btn capitalize-btn" title="Capitalize" onclick="capitalize()">Aa</div>
             </div>
-            <textarea name="text" id="text" oninput="count()" class="text p-4 h-[40vh] rounded-xl w-[60%]  text-xl border-2 border-black resize-none" placeholder="Enter your text here"></textarea>
+            <textarea name="text" id="text" oninput="count()" class="text" placeholder="Enter your text here"></textarea>
            
             <div class="">
-                <button class="btn " onclick="clearText()">Clear</button>
+                <button class="btn" onclick="clearText()">Clear</button>
             </div>
             <div class="result">
                 <p id="result">0 characters and 0 words</p>
             </div>
         </div>
-        <div class="footer w-full bg-blue-400 text-lg text-center py-2"> 
+        <div class="footer"> 
             <p>Created by <a href="https://www.github.com/rohitbedwal9" class="text-blue-800">rohitbedwal9</a></p>
         </div>
     </div>
